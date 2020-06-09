@@ -1,10 +1,15 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { View } from 'react-native';
-
-// import { Container } from './styles';
+import { StatusBar } from 'react-native';
+import Routes from './routes';
 
 const App = () => {
-  return <View />;
+  return (
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="#0D755F"/>
+      <Routes />
+    </>
+  );
 }
 
 export default App;
