@@ -1,5 +1,20 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.ScrollView`
-  background-color: #edfffb;
+  flex: 1;
+  background-color: #0073FF;
+`;
+
+export const EventFeedBar = styled.View`
+  background-color: rgba(0, 115, 255, 0);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+`;
+
+export const EventGroupTitle = styled.Text`
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  
 `;

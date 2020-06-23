@@ -1,17 +1,54 @@
 import React from 'react';
-import { Container } from './styles';
+import { ScrollView } from 'react-native';
+import { Container, EventFeedBar, EventGroupTitle} from './styles';
 
 import EventCards from '../../components/EventCards'; 
 
 const Feed = () => {
   return (
-    <Container> 
-        <EventCards/>
-        <EventCards/>
-        <EventCards/>
-        <EventCards/>
-        <EventCards/>
-        <EventCards/>
+    <Container>
+      <EventFeedBar>
+        <EventGroupTitle>
+          Teste
+        </EventGroupTitle>
+        <ScrollView 
+          horizontal={true}
+        >
+          <EventCards/>
+          <EventCards/>
+          <EventCards/>
+          <EventCards/>
+          <EventCards/>
+        </ScrollView>
+      </EventFeedBar>
+      <EventFeedBar>
+        <EventGroupTitle>
+          Teste 2
+        </EventGroupTitle>
+        <ScrollView 
+          horizontal={true}
+        >
+          <EventCards/>
+          <EventCards/>
+          <EventCards/>
+          <EventCards/>
+          <EventCards/>
+        </ScrollView>
+      </EventFeedBar>
+      <EventFeedBar>
+        <EventGroupTitle>
+          Teste 3
+        </EventGroupTitle>
+        <ScrollView 
+          horizontal={true}
+        >
+          <EventCards/>
+          <EventCards/>
+          <EventCards/>
+          <EventCards/>
+          <EventCards/>
+        </ScrollView>
+      </EventFeedBar>
     </Container>
   );
   
