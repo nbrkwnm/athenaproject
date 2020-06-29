@@ -1,6 +1,7 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { StatusBar, ScrollView } from 'react-native';
 import { Container, EventFeedBar, EventGroupTitle} from './styles';
+import {} from 'react-native-gesture-handler';
 
 import EventCards from '../../components/EventCards'; 
 
@@ -13,6 +14,7 @@ const Feed = () => {
         </EventGroupTitle>
         <ScrollView 
           horizontal={true}
+          showsHorizontalScrollIndicator={false}
         >
           <EventCards/>
           <EventCards/>
@@ -21,12 +23,14 @@ const Feed = () => {
           <EventCards/>
         </ScrollView>
       </EventFeedBar>
+      
       <EventFeedBar>
         <EventGroupTitle>
           Teste 2
         </EventGroupTitle>
         <ScrollView 
           horizontal={true}
+          showsHorizontalScrollIndicator={false}
         >
           <EventCards/>
           <EventCards/>
@@ -35,12 +39,14 @@ const Feed = () => {
           <EventCards/>
         </ScrollView>
       </EventFeedBar>
+      
       <EventFeedBar>
         <EventGroupTitle>
           Teste 3
         </EventGroupTitle>
         <ScrollView 
           horizontal={true}
+          showsHorizontalScrollIndicator={false}
         >
           <EventCards/>
           <EventCards/>
@@ -50,8 +56,7 @@ const Feed = () => {
         </ScrollView>
       </EventFeedBar>
     </Container>
-  );
-  
+);
 }
 
 export default Feed;

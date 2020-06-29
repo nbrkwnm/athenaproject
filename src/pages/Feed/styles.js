@@ -9,12 +9,11 @@ export const EventFeedBar = styled.View`
   background-color: rgba(0, 115, 255, 0);
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 25px;
 `;
 
 export const EventGroupTitle = styled.Text`
   color: white;
   font-size: 32px;
   font-weight: bold;
-  
 `;

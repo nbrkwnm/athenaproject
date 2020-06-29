@@ -2,24 +2,23 @@ import styled from 'styled-components/native';
 
 export const Container = styled.ScrollView`
   flex: 1;
-  background-color: #edfffb;
+  background-color: #FFFFFF;
 `;
 
-export const EventHeader = styled.ScrollView`
+export const EventHeader = styled.View`
   flex-direction: row;
-  flex: 1;
+  background-color: #0073FF;  
+  height: 60px;
   width: 100%;
-  height: 200px;
-  background-color: #000;
 `;
 
 export const EventTitle = styled.Text`
   font-weight: bold;
-  font-size: 16px;
+  font-size: 32px;
+  margin-left: 10px;
 `;
 
-export const EventDescription = styled.Text`
-
+export const DescriptionContent = styled.ScrollView`
+  margin: 10px;
 `;
-
 
