@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import { Container, ProfilePicture, ProfileInfo, ProfileName, ProfileUser } from './styles';
+import { Container, ProfilePicture, ProfileInfo, ProfileName, ProfileUser, ButtonText } from './styles';
 
 const styles = StyleSheet.create({
   shadow: {
@@ -14,21 +16,38 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
 
     elevation: 5,
+  },
+  button: {
+    marginTop: 15,
+    alignItems: "center",
+    backgroundColor: "#0073ff",
+    padding: 5,
+    borderRadius: 5,
   }
 })
 
 const ProfileHeader = () => {
   return (
   <Container style={styles.shadow}>
-    <ProfilePicture/>
-        <ProfileInfo>
-          <ProfileName numberOfLines={2}>
-            Murilo N. H. Kawanami
-          </ProfileName>
-          <ProfileUser numberOfLines={1}>
-            @teste
-          </ProfileUser>
-        </ProfileInfo>
+    <ProfilePicture>
+      <Icon name='camera-alt' size={25} color='#000'/>
+    </ProfilePicture>
+    <ProfileInfo>
+      <ProfileName numberOfLines={1}>
+        Murilo N. H. Kawanami
+      </ProfileName>
+      <ProfileUser numberOfLines={1}>
+        @teste
+      </ProfileUser>
+      <TouchableOpacity
+        style={[styles.button, styles.shadow]}
+      >
+        <ButtonText>
+          Editar Perfil
+        </ButtonText>
+      </TouchableOpacity>
+
+    </ProfileInfo>
   </Container>
   );
 }
